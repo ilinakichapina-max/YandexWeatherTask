@@ -6,12 +6,12 @@ import java.time.Duration;
 
 public class WeatherApp {
     public static void main(String[] args) throws Exception {
-        // ВАШ КЛЮЧ (проверьте его в личном кабинете!)
+        // Ключь от API(проверьте его в личном кабинете!)
         String apiKey = "56a75c60-b4ed-459e-bafe-6ae7000d6056";
 
         double lat = 56.820134;
         double lon = 35.833258;
-        int limit = 7;
+        int limit = 5;
 
         String url = String.format("https://api.weather.yandex.ru/v2/forecast?lat=%s&lon=%s&limit=%d", lat, lon, limit);
 
